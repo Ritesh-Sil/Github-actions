@@ -1,0 +1,18 @@
+# Workflow name
+name: first workflow
+
+# Dependency
+on: workflow_dispatch
+
+# defining jobs
+jobs:
+  first-job:
+    #define runner env
+    runs-on: ubuntu-latest
+
+    #define steps
+    steps:
+      - name: Print geeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
